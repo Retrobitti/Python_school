@@ -104,6 +104,7 @@ def reset_game():
     canvas.delete("all")
     target_id = canvas.create_image(300, 200, image=target)
     kernesti_id = canvas.create_image(random.randint(50, 150), 300, image=kernesti)
+    scoreboard = canvas.create_text(300, 50, text=f"Kernesti: {score['Kernesti']} Ernesti: {score['Ernesti']}", font=("Arial", 20))
     update_scoreboard()
 
 def ernesti_throw():
