@@ -83,7 +83,7 @@ def check_win(player):
     else:
         canvas.create_image(canvas.coords(ernesti_id), image=lose_effect)
         canvas.delete(ernesti_id)
-        canvas.create_text(300, 100, text="Ernesti wins, fatality!", font=("Arial", 30), fill="red")
+        canvas.create_text(300, 100, text="Kernesti wins, fatality!", font=("Arial", 30), fill="red")
     game_over = True
     show_reset_button()
 
