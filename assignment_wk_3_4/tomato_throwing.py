@@ -67,7 +67,7 @@ def move_tomato(tomato_id, target_pos, callback=None):
         root.after(500, lambda: canvas.delete(hit_effect))
         if callback:
             root.after(500, callback)
-        sd.stop()
+        sd.stop()                                                           
     else:
         canvas.move(tomato_id, dx, dy)
         root.after(50, lambda: move_tomato(tomato_id, target_pos, callback))
